@@ -35,24 +35,85 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
-					<div id="main">
+<!-- Main -->
+<div id="main">
+  <!-- Post -->
+  <section class="post">
+    <div class="image-container">
+      <img src="images/profile2.jpg" alt="description" width="490" height="450">
+    </div>
+    <div class="post-content">
+      <h1>Hi there!</h1>
+      <p>I am Yun May, a graduate in mathematics and physics from The Open University. I live in the Little Red Dot, where hopes and dreams are sky-high. With a fascination for scientific discoveries and technological innovations, I want to play a part in this development to one day transform people's lives, for the betterment of humanity.</p>
+    </div>
+  </section>
+</div>
 
-						<!-- Post -->
-						<section class="post">
-							<header class="major">
-								
-								<h1>Hi there!<br />
-								</h1>
-								<p><div style="text-align: center;""> <p style="line-height: 1.4;">I am a graduate in mathematics and physics from The Open University. Fascinated by the ways in which scientific discoveries and technological innovations could positively transform our lives, I want to be part of this development.</p>
+<style>
+  .post-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-							</header>
-							<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-							<p> </p>
-							<p></p>
-						</section>
+  .post-content h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-				</div>
+  .post-content p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .image-container {
+  	float: left;
+  	margin-right: 90px;
+    margin-top: 30px;
+  }
+
+  .image-container img {
+    max-width: 150%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px;
+      align-items: center;
+    }
+
+    .post-content {
+      margin: 0;
+    }
+
+    .post-content h1 {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .post-content p {
+      text-align: justify;
+      margin-top: 10px;
+      margin-bottom: 10;
+      line-height: 1.5;
+    }
+
+    .image-container {
+      float: right;
+      margin-left: 60px;
+      margin-top: -15px;
+    }
+
+</style>
+
+
 	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
