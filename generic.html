@@ -37,82 +37,33 @@
 
 <!-- Main -->
 <div id="main">
+
   <!-- Post -->
   <section class="post">
-    <div class="image-container">
-      <img src="images/profile2.jpg" alt="description" width="490" height="450">
-    </div>
-    <div class="post-content">
-      <h1>Hi there!</h1>
-      <p>I am Yun May, a graduate in mathematics and physics from The Open University. I live in the Little Red Dot, where hopes and dreams are sky-high. With a fascination for scientific discoveries and technological innovations, I want to be a part of this development to one day transform people's lives, for the betterment of humanity.</p>
-    </div>
+    <header class="major">
+      <div class="post-heading">
+        <h1>Hi there!</h1>
+		<p style="text-align: justify; text-justify: inter-word;">I am Yun May, a graduate in mathematics and physics from The Open University. I live in the Little Red Dot, where hopes and dreams are sky-high. With a fascination for scientific discoveries and technological innovations, I want to play a part in this development to one day transform people's lives for the betterment of humanity.</p>
+        <div class="image main"><img src="images/profile2.jpg" alt="description" width="490" height="450" /></div>
   </section>
+	<style>
+		.image.main img {
+  width: 80%;
+  margin: 20px 0;
+}
+	.image.main img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+	.post-heading p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.35;
+  padding-left: 40px;
+}
+	</style>
 </div>
-
-<style>
-  .post-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .post-content h1 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-
-  .post-content p {
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    line-height: 1.5;
-  }
-
-  .image-container {
-  	float: left;
-  	margin-right: 90px;
-    margin-top: 30px;
-  }
-
-  .image-container img {
-    max-width: 140%;
-    height: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    .post {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
-      align-items: center;
-    }
-
-    .post-content {
-      margin: 0;
-    }
-
-    .post-content h1 {
-      text-align: left;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .post-content p {
-      text-align: justify;
-      margin-top: 10px;
-      margin-bottom: 10;
-      line-height: 1.5;
-    }
-
-    .image-container {
-      float: right;
-      margin-left: 50px;
-      margin-top: -15px;
-    }
-
-</style>
-
 
 	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
