@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 
@@ -37,33 +38,88 @@
 
 <!-- Main -->
 <div id="main">
+	<!-- Post -->
+	<section class="post">
+	  <div class="post-content">
+		<img src="images/profile2.jpg" alt="description" width="490" height="450">
+	  </div>
+	  <div class="post-content">
+		<h1>Hi there!</h1>
+		<p>I am Yun May, a Master's student in Precision Scientific Instrumentation with a specialization in Optoelectronics at Nanyang Technological University, Singapore. Living in the Little Red Dot, where hopes and dreams soar high, I am deeply fascinated by scientific discoveries and technological innovations. With a strong passion for quantum technology, I aspire to contribute to advancements that transform lives and drive progress for the betterment of humanity.</p>
+	</div>
+	</section>
+  </div>
+  
+  <style>
+    /* Styling for Post Section */
+    .post {
+        display: flex;
+        align-items: center; /* Aligns content vertically */
+        justify-content: center; /* Ensures proper spacing */
+        max-width: 1800px;
+        margin: 20px auto;
+        gap: 30px;
+    }
 
-  <!-- Post -->
-  <section class="post">
-    <header class="major">
-      <div class="post-heading">
-        <h1>Hi there!</h1>
-		<p style="text-align: justify; text-justify: inter-word;">I am Yun May, a graduate in mathematics and physics from The Open University. I live in the Little Red Dot, where hopes and dreams are sky-high. With a fascination for scientific discoveries and technological innovations, I want to be a part of this development to one day transform people's lives and for the betterment of humanity.</p>
-        <div class="image main"><img src="images/profile2.jpg" alt="description" width="490" height="450" /></div>
-  </section>
-	<style>
-		.image.main img {
-  width: 80%;
-  margin: 20px 0;
-  margin-bottom: 10px;
-  margin-top: -20px;
-}
-	.image.main img {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-	.post-heading p {
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.35;
-}
-	</style>
+    /* Text Content Styling */
+    .post-content {
+        flex: 1; /* Allows text to take up remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+		margin-right: 20px;
+    }
+
+    .post-content h1 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .post-content p {
+        text-align: start;
+        line-height: 1.5;
+        margin-bottom: -1px;
+    }
+
+    /* Image Styling */
+    .image-container {
+        flex-shrink: 0; /* Prevents the image from shrinking */
+        width: 500px; /* Fixed width */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensures image takes up full width */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Removes extra spacing below image */
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .post {
+            flex-direction: column; /* Stack text and image on mobile */
+            align-items: center;
+            text-align: center;
+        }
+
+        .image-container {
+            width: 100%; /* Full width on small screens */
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 80%; /* Slightly smaller on mobile */
+            margin: 0 auto;
+        }
+
+        .post-content h1 {
+            width: 80%;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+</style>
+
 </div>
 
 	<!-- Scripts -->
